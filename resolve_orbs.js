@@ -10,7 +10,7 @@ const height = canvas.height = window.innerHeight;
 
 
 const img = new Image();
-img.src="resolve.jpg";
+img.src="../assets/images/NixPic.jpg";
 
 dDown = false;
 
@@ -18,7 +18,7 @@ dDown = false;
 // key down event
 document.addEventListener("keydown", keyDownHandler, false);
 function keyDownHandler(e) {
-    if(e.which  == 82) {
+    if(e.which  == 68) {
       //https://keycode.info/
       // turn on or off
         dDown = !dDown;
@@ -88,12 +88,10 @@ Ball.prototype.collisionDetect = function() {
       if (distance < this.size + balls[j].size ) {
         //balls[j].color = this.color = 'rgb(' + random(0,255) + ',' + random(0,255) + ',' + random(0,255) +')';
        //balls[j].fillStyle  = this.fillStyle = "red";
-      // ctx.font = '50px serif';
        ctx.textAlign = "center";
-       ctx.fillStyle = "white";    
-       ctx.fillText("Resolve",this.x, this.y, this.size );   
-       //ctx.strokeText("Resolve",this.x, this.y, this.size);
-       
+      // ctx.strokeText("Resolve",this.x, this.y, this.size);
+       ctx.fillStyle = "black";
+        ctx.fillText("Resolve",this.x, this.y, this.size);
       // ctx.font = '50px serif';
       //ctx.stroke()
       //ctx.strokestyle = 'orange';
