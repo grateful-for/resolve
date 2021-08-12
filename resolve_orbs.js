@@ -90,7 +90,7 @@ Ball.prototype.collisionDetect = function() {
        //balls[j].fillStyle  = this.fillStyle = "red";
       // ctx.font = '50px serif';
        ctx.textAlign = "center";
-       ctx.fillStyle = 'white';    
+       ctx.fillStyle = "white";    
        ctx.fillText("Resolve",this.x, this.y, this.size );   
        //ctx.strokeText("Resolve",this.x, this.y, this.size);
        
