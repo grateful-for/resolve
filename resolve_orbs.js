@@ -88,7 +88,7 @@ Ball.prototype.collisionDetect = function() {
       if (distance < this.size + balls[j].size ) {
         //balls[j].color = this.color = 'rgb(' + random(0,255) + ',' + random(0,255) + ',' + random(0,255) +')';
        //balls[j].fillStyle  = this.fillStyle = "red";
-       ctx.font = '50px serif';
+      // ctx.font = '50px serif';
        ctx.textAlign = "center";
        ctx.fillStyle = 'white';    
        ctx.fillText("Resolve",this.x, this.y, this.size );   
