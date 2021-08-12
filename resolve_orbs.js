@@ -10,7 +10,7 @@ const height = canvas.height = window.innerHeight;
 
 
 const img = new Image();
-img.src="../assets/images/NixPic.jpg";
+img.src="resolve.jpg";
 
 dDown = false;
 
@@ -18,7 +18,7 @@ dDown = false;
 // key down event
 document.addEventListener("keydown", keyDownHandler, false);
 function keyDownHandler(e) {
-    if(e.which  == 68) {
+    if(e.which  == 82) {
       //https://keycode.info/
       // turn on or off
         dDown = !dDown;
